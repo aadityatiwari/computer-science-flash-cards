@@ -97,7 +97,7 @@ Thanks [@eyedol](https://github.com/eyedol)
   3. To install pip, securely download [get-pip.py](https://bootstrap.pypa.io/get-pip.py)
   4. Run ```python get-pip.py```in terminal
   5. Run ``` pip install -r requirements.txt``` in terminal after going to correct folder
-2. Open flash_cards.py and uncomment the line 52-55 begining from ``` @app.route('/initdb')```
+2. Open flash_cards.py and uncomment the line 52-55 beginning from ``` @app.route('/initdb')```
 3. Type ```python flash_cards.py``` 
 
 4. Login using id:USERNAME='admin', PASSWORD='default. Open localhost:5000/initdb
@@ -119,7 +119,7 @@ __Make sure you already installed [docker](https://www.docker.com)__
 
 __If you already had a backup file `cards.db`. Run following command:__
 *Note: We don't need to rebuild image, just delete old container if you already built.*
-`docker run -d -p 8000:8000 --name cs-flash-cards -v :<path_to_folder_contains_cards_db>:/src/db cs-flash-cards`.
+`docker run -d -p 8000:8000 --name cs-flash-cards -v <path_to_folder_contains_cards_db>:/src/db cs-flash-cards`.
 `<path_to_folder_contains_cards_db>`: is the full path contains `cards.db`.
 Example: `/home/tinpee/cs-flash-cards/db`, and `cards.db` is inside this folder.
 
